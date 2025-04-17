@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aider - Book Your Appointment</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <div class="max">
+                <img src="./logo2.png">
+            </div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">Appointments</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">Volunteer</a></li>
+            </ul>
+        </nav>
+        <div class="auth-buttons">
+            <button class="login-btn">Login</button>
+            <button class="signup-btn">Sign Up</button>
+        </div>
+    </header>
+    
+    <section class="hero">
+        <div class="hero-text">
+            <h1>Schedule your Next Doctor's Appointment<br> in Just Seconds</h1>
+            <p>Booking a doctor appointment has never been easier. Find a doctor, book an appointment, and get the care you need.</p>
+        </div>
+        <div class="hero-image">
+            
+        </div>
+    </section>
+    
+    <section class="search-section">
+        <h2>Find a doctor at your own ease</h2>
+        <form class="search-form">
+            <div class="search-field">
+                <label>Specialty</label>
+                <button type="button" class="dropdown-select">
+                    <span class="fas fa-stethoscope" style="color: #57595c;"></span>
+                    <span class="text">Dentist</span>
+                    <span class="arrow">▼</span>
+                </button>
+            </div>
+            
+            <div class="search-field">
+                <label>Rating</label>
+                <button type="button" class="dropdown-select">
+                    <span class="fas fa-star" style="color: #57595c;"></span>
+                    <span class="text">5</span>
+                    <span class="arrow">▼</span>
+                </button>
+            </div>
+            
+            <div class="search-field">
+                <label>Experience</label>
+                <button type="button" class="dropdown-select">
+                    <span class="fas fa-hourglass-half" style="color: #57595c;"></span>
+                    <span class="text">2-10 years</span>
+                    <span class="arrow">▼</span>
+                </button>
+            </div>
+            
+            <div class="search-field">
+                <label>Booking Fee</label>
+                <button type="button" class="dropdown-select">
+                    <span class="fas fa-dollar-sign" style="color: #57595c;"></span>
+                    <span class="text">No</span>
+                    <span class="arrow">▼</span>
+                </button>
+            </div>
+            
+            <button type="button" class="search-button">Search</button>
+            <button type="button" class="reset-button">Reset</button>
+        </form>
+    </section>
+    
+    <section class="results-section">
+        <div class="results-header">
+
+            <h3>Recently Met Doctors</h3>
+            <div class="doctors-grid">
+                <div class="doctor-card">
+                    <div class="doctor-image">
+                        <img src="./an1.jpeg" alt="Dr. Oliver Bennet">
+                    </div>
+                    <h3 class="doctor-name">Dr. Oliver Bennet</h3>
+                    <p class="doctor-specialty">Dentist • 7 years</p>
+                    <div class="doctor-rating">★★★★☆</div>
+                    <button>View Profile</button>
+                </div> 
+
+                <div class="doctor-card">
+                    <div class="doctor-image">
+                        <img src="./an2.jpeg" alt="Dr. James Whitmore">
+                    </div>
+                    <h3 class="doctor-name">Dr. James Whitmore</h3>
+                    <p class="doctor-specialty">Oncologist • 6 years</p>
+                    <div class="doctor-rating">★★★★☆</div>
+                    <button>View Profile</button>
+                </div>
+
+                <div class="doctor-card">
+                    <div class="doctor-image">
+                        <img src="./an6.jpeg" alt="Dr. Chloe Harrison">
+                    </div>
+                    <h3 class="doctor-name">Dr. Chloe Harrison</h3>
+                    <p class="doctor-specialty">Gynaecologist • 5 years</p>
+                    <div class="doctor-rating">★★★★☆</div>
+                    <button>View Profile</button>
+                </div>
+            </div>
+            <h2>6 doctors available</h2>
+            <p class="results-note">Book appointments with available doctors near you in seconds.</p>
+        </div>
+        
+        <div class="doctors-grid">
+            
+            <div class="doctor-card">
+                <div class="doctor-image">
+                    <img src="./an7.jpeg" alt="Dr. Grace Montgomery">
+                </div>
+                <h3 class="doctor-name">Dr. Grace Montgomery</h3>
+                <p class="doctor-specialty">Cardiologist • 5 years</p>
+                <div class="doctor-rating">★★★★★</div>
+                <button>View Profile</button>
+            </div>
+            
+            
+            <div class="doctor-card">
+                <div class="doctor-image">
+                    <img src="./an3.jpeg" alt="Dr. Ethan Collins">
+                </div>
+                <h3 class="doctor-name">Dr. Ethan Collins</h3>
+                <p class="doctor-specialty">Neurosurgeon • 8 years</p>
+                <div class="doctor-rating">★★★★☆</div>
+                <button>View Profile</button>
+            </div>
+            
+            
+            <div class="doctor-card">
+                <div class="doctor-image">
+                    <img src="./an8.jpeg" alt="Dr. Sophie Langston">
+                </div>
+                <h3 class="doctor-name">Dr. Sophie Langston</h3>
+                <p class="doctor-specialty">Optometrist • 7 years</p>
+                <div class="doctor-rating">★★★★★</div>
+                <button>View Profile</button>
+            </div>
+            
+            
+            <div class="doctor-card">
+                <div class="doctor-image">
+                    <img src="./an4.jpeg" alt="Dr. Liam Fletcher">
+                </div>
+                <h3 class="doctor-name">Dr. Liam Fletcher</h3>
+                <p class="doctor-specialty">Orthopedic Surgeon • 10 years</p>
+                <div class="doctor-rating">★★★★☆</div>
+                <button>View Profile</button>
+            </div>
+            
+            
+            <div class="doctor-card">
+                <div class="doctor-image">
+                    <img src="./an9.jpeg" alt="Dr. Amelia Thornton">
+                </div>
+                <h3 class="doctor-name">Dr. Amelia Thornton</h3>
+                <p class="doctor-specialty">Pediatrician • 6 years</p>
+                <div class="doctor-rating">★★★★★</div>
+                <button>View Profile</button>
+            </div>
+            
+            
+            <div class="doctor-card">
+                <div class="doctor-image">
+                    <img src="./an5.jpeg" alt="Dr. Aarav Mehta">
+                </div>
+                <h3 class="doctor-name">Dr. Aarav Mehta</h3>
+                <p class="doctor-specialty">Psychiatrist • 9 years</p>
+                <div class="doctor-rating">★★★★☆</div>
+                <button>View Profile</button>
+            </div>
+        </div>
+        
+        <div class="pagination">
+            <button class="arrow">« Prev</button>
+            <button class="active">1</button>
+            <button>2</button>
+            <button>3</button>
+            <button>...</button>
+            <button>10</button>
+            <button class="arrow">Next »</button>
+        </div>
+    </section>
+
+    <script src= './doctors.js'></script>
+    
+    
+</body>
+</html>
