@@ -1,0 +1,323 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    /* background-image: url(./Hero\ Image.png); */
+    /* background-size: cover; */
+    /* background-repeat: no-repeat; */
+    height: 100vh;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('./Hero\ Image.png') center/cover no-repeat fixed;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: -1; 
+  }
+
+  body::after {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: -1;
+  }
+  
+
+
+.container {
+    max-width: 100%;
+    position: relative;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.navigation {
+    display: flex;
+    gap: 20px;
+}
+
+.navigation a {
+    text-decoration: none;
+    color: #666;
+    font-size: 15px;
+}
+
+.auth-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.auth-buttons a{
+    text-decoration: none;
+    color: #333;
+}
+
+.login-btn {
+    padding: 12px 32px;
+    width: 131px;
+    height: 44px;
+    border: none;
+    background-color: #f5f5f5;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.login-btn:hover{
+    background-color: #1d6a37;
+    color: #f5f5f5;
+}
+
+.register-btn {
+    padding: 12px 32px;
+    width: 131px;
+    height: 44px;
+    border: none;
+    background-color: #f5f5f5;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+}
+.register-btn:hover{
+    background-color: #1d6a37;
+    color: #f5f5f5;
+}
+.signup-container {
+    width: 500px;
+    margin: 20px auto;
+    background-color: rgba(255, 255, 255, 0.87);
+    backdrop-filter: blur(10px);
+    padding: 20px;
+    border-radius: 10px;
+    position: relative;
+    z-index: 2;
+}
+
+.signup-header {
+    margin-bottom: 10px;
+}
+
+.signup-header h2 {
+    font-size: 24px;
+    color: black;
+    margin-bottom: 5px;
+}
+
+.login-link {
+    font-size: 14px;
+    color: black;
+    margin-bottom: 15px;
+}
+
+.login-link a {
+    color: #1d6a37;
+    text-decoration: none;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 14px;
+    color: black;
+    margin-bottom: 5px;
+}
+
+.form-control {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.input-icon {
+    position: relative;
+}
+
+.input-icon i {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #999;
+}
+
+.input-icon input, .input-icon select {
+    padding-left: 35px;
+    height: 40px;
+}
+
+.password-field {
+    position: relative;
+}
+
+.password-toggle {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: #999;
+}
+
+.btn {
+    width: 100%;
+    height: 60px;
+    padding: 20px 48px;
+    border: none;
+    border-radius: 4px;
+    font-size: 15px;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.btn-primary {
+    background-color: #1d6a37;
+    color: white;
+}
+
+.btn-secondary {
+    background-color: #d4c0a5;
+    color: #333;
+}
+
+  
+  
+  @media screen and (max-width: 991px) {
+    .navbar {
+      padding: 15px 20px;
+    }
+    
+    .navigation a {
+      font-size: 14px;
+    }
+    
+   .auth-buttons button {
+      padding: 10px 20px;
+      width: 90px;
+      height: 30px;
+      font-size: 10px;
+    } 
+    
+    .signup-container {
+      width: 90%;
+      max-width: 500px;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    
+    
+    .navigation {
+      position: fixed;
+      top: 0;
+      right: -100%;
+      width: 70%;
+      height: 100vh;
+      background-color: white;
+      flex-direction: column;
+      padding: 80px 30px;
+      transition: right 0.3s ease;
+      z-index: 99;
+      box-shadow: -2px 0 10px rgba(0, 0, 0, 0.1);
+    }
+    
+    .navigation.active {
+      right: 0;
+    }
+    
+    .navigation a {
+      font-size: 16px;
+      padding: 15px 0;
+      border-bottom: 1px solid #eee;
+    }
+    
+    .auth-buttons {
+      flex-direction: column;
+      gap: 10px;
+    }
+    
+    .auth-buttons button {
+      width: 100%;
+    }
+
+        
+    .signup-container {
+      margin-top: 40px;
+      padding: 15px;
+    }
+    
+    .form-group {
+      margin-bottom: 12px;
+    }
+    
+    .btn {
+      height: 50px;
+      padding: 15px;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .navbar {
+      padding: 12px 15px;
+    }
+    
+    .logo img {
+      max-width: 120px;
+    }
+    
+    .signup-header h2 {
+      font-size: 20px;
+    }
+    
+    .form-control {
+      font-size: 13px;
+    }
+    
+    .signup-container {
+      width: 95%;
+      padding: 12px;
+    }
+    
+    .navigation {
+      width: 85%;
+    }
+  }
+  
+
+
+
