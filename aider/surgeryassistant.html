@@ -1,0 +1,1087 @@
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/> <title> 
+Surgery Assistant Module - Detailed Checklists 
+</title>
+<script src="https://cdn.tailwindcss.com">
+</script>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Encode+Sans:wght@100..900&display=swap" rel="stylesheet"/>
+<style> 
+body { 
+font-family: "Encode Sans", sans-serif;
+} 
+</style>
+</head>
+<body class="bg-gray-50 min-h-screen flex flex-col">
+<header class="bg-white shadow-md sticky top-0 z-30">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between h-16">
+<div class="flex items-center space-x-3">
+<img alt="Aider" class="w-20 h-20 rounded-md" src="./logo2.png"/>
+<h1 class="text-xl font-semibold text-gray-900"> 
+Surgery Assistant 
+</h1>
+</div>
+<nav class="hidden md:flex space-x-6 text-gray-700 font-medium">
+<a class="hover:text-blue-600 transition" href="#procedures"> 
+Procedures 
+</a>
+<a class="hover:text-blue-600 transition" href="#checklist"> 
+Checklist 
+</a>
+<a class="hover:text-blue-600 transition" href="#materials"> 
+Materials 
+</a>
+</nav>
+<button aria-label="Toggle menu" class="md:hidden text-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-500" id="menu-btn">
+<i class="fas fa-bars fa-lg">
+</i>
+</button>
+</div>
+<nav aria-label="Mobile menu" class="md:hidden bg-white border-t border-gray-200 hidden" id="mobile-menu">
+<a class="block px-4 py-3 text-gray-700 hover:bg-gray-100" href="#procedures"> Procedures 
+</a>
+<a class="block px-4 py-3 text-gray-700 hover:bg-gray-100" href="#checklist"> Checklist 
+</a>
+<a class="block px-4 py-3 text-gray-700 hover:bg-gray-100" href="#materials"> Materials 
+</a>
+</nav>
+</header>
+<main class="flex-grow max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8"> <section class="mb-12" id="procedures">
+<h2 class="text-3xl font-semibold text-gray-900 mb-6 text-center"> Surgical Procedures </h2>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+<article class="bg-white rounded-lg shadow-md p-6 flex flex-col items-center text-center">
+<img alt="Illustration of an appendectomy" class="rounded-md mb-4 w-full object-cover h-64" height="120" src="./appendix.jpg" width="160"/>
+<h3 class="text-xl font-semibold mb-2"> 
+Appendectomy 
+</h3>
+<p class="text-gray-600"> 
+Removal of the appendix to treat appendicitis. 
+</p>
+</article>
+<article class="bg-white rounded-lg shadow-md p-6 flex flex-col items-center text-center">
+<img alt="Illustration of gallbladder removal surgery with laparoscopic instruments" class="rounded-md mb-4 w-full object-cover h-64" height="120" src="https://storage.googleapis.com/a1aa/image/04980767-3a74-458a-48b1-e86293a37985.jpg" width="160"/>
+<h3 class="text-xl font-semibold mb-2"> 
+Cholecystectomy 
+</h3>
+<p class="text-gray-600"> 
+Surgical removal of the gallbladder. 
+</p>
+</article>
+<article class="bg-white rounded-lg shadow-md p-6 flex flex-col items-center text-center">
+<img alt="Illustration of hernia repair surgery showing abdominal wall and mesh placement" class="rounded-md mb-4 w-full object-cover h-64" height="120" src="./hernia.jpg" width="160"/>
+<h3 class="text-xl font-semibold mb-2"> 
+Hernia Repair 
+</h3>
+<p class="text-gray-600"> 
+Correction of hernias in the abdominal wall. 
+</p>
+</article>
+<article class="bg-white rounded-lg shadow-md p-6 flex flex-col items-center text-center">
+<img alt="Illustration of cesarean section" class="rounded-md mb-4 w-full object-cover h-64" height="120" src="./cs.jpg" width="160"/>
+<h3 class="text-xl font-semibold mb-2"> 
+Cesarean Section 
+</h3>
+<p class="text-gray-600"> 
+Surgical delivery of a baby through the abdomen. 
+</p>
+</article>
+<article class="bg-white rounded-lg shadow-md p-6 flex flex-col items-center text-center">
+<img alt="Illustration of coronary artery bypass graft surgery showing heart and graft vessels" class="rounded-md mb-4 w-full object-cover h-64" height="120" src="https://storage.googleapis.com/a1aa/image/ff0ba4e2-1e2e-4217-e6cb-d894f4c825a7.jpg" width="160"/>
+<h3 class="text-xl font-semibold mb-2"> 
+Coronary Artery Bypass 
+</h3>
+<p class="text-gray-600"> 
+Bypass surgery to improve blood flow to the heart. 
+</p>
+</article>
+<article class="bg-white rounded-lg shadow-md p-6 flex flex-col items-center text-center">
+<img alt="Illustration of knee arthroscopy showing minimally invasive knee joint surgery" class="rounded-md mb-4 w-full object-cover h-64" height="120" src="https://storage.googleapis.com/a1aa/image/8d83f0de-8c42-4280-2d5e-7c3b5590dda5.jpg" width="160"/>
+<h3 class="text-xl font-semibold mb-2"> 
+Knee Arthroscopy 
+</h3>
+<p class="text-gray-600"> 
+Minimally invasive surgery to diagnose and treat knee problems. 
+</p>
+</article>
+<!-- New Procedures -->
+<article class="bg-white rounded-lg shadow-md p-6 flex flex-col items-center text-center">
+<img alt="Illustration of thyroidectomy surgery showing neck incision and thyroid gland" class="rounded-md mb-4 w-full object-cover h-64" height="120" src="https://storage.googleapis.com/a1aa/image/a1ed7035-ce07-41f3-9400-e09ae5c0520d.jpg" width="160"/>
+<h3 class="text-xl font-semibold mb-2"> 
+Thyroidectomy 
+</h3>
+<p class="text-gray-600"> 
+Surgical removal of all or part of the thyroid gland. 
+</p>
+</article>
+<article class="bg-white rounded-lg shadow-md p-6 flex flex-col items-center text-center">
+<img alt="Illustration of mastectomy" class="rounded-md mb-4 w-full object-cover h-64" height="120" src="./masectomy.jpg" width="160"/> <h3 class="text-xl font-semibold mb-2"> 
+Mastectomy 
+</h3>
+<p class="text-gray-600"> 
+Surgical removal of one or both breasts, partially or completely. 
+</p>
+</article>
+<article class="bg-white rounded-lg shadow-md p-6 flex flex-col items-center text-center">
+<img alt="Illustration of hip replacement surgery showing prosthetic hip joint" class="rounded-md mb-4 w-full object-cover h-64" height="120" src="https://storage.googleapis.com/a1aa/image/3620794c-3c6c-4bb1-05b3-8c24abee2fb0.jpg" width="160"/>
+<h3 class="text-xl font-semibold mb-2"> 
+Hip Replacement 
+</h3>
+<p class="text-gray-600"> 
+Replacement of damaged hip joint with prosthetic implant. 
+</p>
+</article>
+<article class="bg-white rounded-lg shadow-md p-6 flex flex-col items-center text-center">
+<img alt="Illustration of cataract surgery showing eye and surgical instruments" class="rounded-md mb-4 w-full object-cover h-64" height="120" src="https://storage.googleapis.com/a1aa/image/5cab41a9-1258-4a9d-61b7-c75b44c93176.jpg" width="160"/>
+<h3 class="text-xl font-semibold mb-2"> 
+Cataract Surgery 
+</h3>
+<p class="text-gray-600"> 
+Removal of cloudy lens and replacement with artificial intraocular lens. </p>
+</article>
+<article class="bg-white rounded-lg shadow-md p-6 flex flex-col items-center text-center">
+<img alt="Illustration of colectomy surgery showing large intestine and surgical tools" class="rounded-md mb-4 w-full object-cover h-64" height="120" src="https://storage.googleapis.com/a1aa/image/8ad4c537-d231-4d2b-ecd0-29c364740b80.jpg" width="160"/>
+<h3 class="text-xl font-semibold mb-2"> 
+Colectomy 
+</h3>
+<p class="text-gray-600"> 
+Surgical removal of all or part of the colon. 
+</p>
+</article>
+<article class="bg-white rounded-lg shadow-md p-6 flex flex-col items-center text-center">
+<img alt="Illustration of craniotomy surgery showing skull opening and brain exposure" class="rounded-md mb-4 w-full object-cover h-64" height="120" src="https://storage.googleapis.com/a1aa/image/212fb645-f817-4c8b-325e-297017cf39d2.jpg" width="160"/>
+<h3 class="text-xl font-semibold mb-2"> 
+Craniotomy 
+</h3>
+<p class="text-gray-600"> 
+Surgical opening of the skull to access the brain. 
+</p>
+</article>
+</div>
+</section>
+<section class="mb-12" id="checklist">
+<h2 class="text-3xl font-semibold text-gray-900 mb-6 text-center"> 
+Detailed Checklists
+</h2>
+<div class="space-y-10 max-w-5xl mx-auto">
+<!-- Appendectomy Detailed Checklist -->
+<article class="bg-white rounded-lg shadow-md p-6">
+<h3 class="text-2xl font-semibold mb-4 flex items-center space-x-3">
+<img alt="Icon representing appendectomy surgery with stylized appendix" class="w-10 h-10" height="40" src="https://storage.googleapis.com/a1aa/image/26d81274-90a7-4f4a-c344-0c0d75d84da2.jpg" width="40"/>
+<span> 
+Appendectomy Detailed Checklist 
+</span>
+</h3>
+<ol class="list-decimal list-inside space-y-3 text-gray-700"><li><strong>Materials:</strong><ul class="list-disc list-inside ml-4"><li>Electrocautery device</li><li>Gauze sponges</li><li>Hemostats</li><li>Laparoscopic instruments set</li><li>Retractors</li><li>Saline irrigation solution</li><li>Scalpel</li><li>Sterile drapes</li><li>Suction device</li><li>Sutures and staplers</li></ul></li>
+<li>
+<strong> 
+Preoperative Preparation: 
+</strong> 
+Confirm patient identity, surgical site, and consent. Verify fasting status and review labs. </li>
+<li>
+<strong> 
+Patient Positioning: 
+</strong> 
+Supine position with arms secured. Apply sequential compression devices to prevent DVT. 
+</li>
+<li>
+<strong> 
+Skin Preparation: 
+</strong> 
+Cleanse lower right abdomen with antiseptic solution (e.g., chlorhexidine). Allow to dry. </li>
+<li>
+<strong> 
+Antibiotic Prophylaxis: 
+</strong> 
+Administer recommended prophylactic antibiotics within 60 minutes before incision. </li>
+<li>
+<strong> 
+Incision Type: 
+</strong> 
+Make a right lower quadrant muscle-splitting incision (e.g., McBurney's or Lanz incision). 
+</li>
+<li>
+<strong> 
+Exposure: 
+</strong> 
+Retract tissues carefully to expose the appendix. Identify and isolate the appendix. </li>
+<li>
+<strong> 
+Appendix Mobilization:
+</strong> 
+Ligate the mesoappendix vessels using clips or ties. Ensure hemostasis. </li>
+<li>
+<strong> 
+Appendix Removal: 
+</strong> 
+Ligate the base of the appendix with absorbable sutures. Transect and remove the appendix. 
+</li>
+<li>
+<strong> 
+Stump Management: 
+</strong> 
+Invert the appendiceal stump with purse-string suture if indicated. 
+</li>
+<li>
+<strong> 
+Peritoneal Toilet: 
+</strong> 
+Irrigate the surgical field with warm saline to reduce infection risk. 
+</li>
+<li>
+<strong> 
+Closure: 
+</strong> 
+Close muscle layers with absorbable sutures. Close subcutaneous tissue and skin with appropriate sutures or staples. 
+</li>
+<li>
+<strong> 
+Postoperative Care: 
+</strong> 
+Monitor vital signs, pain control, and wound for signs of infection. Early mobilization encouraged. 
+</li>
+</ol>
+</article>
+<!-- Cholecystectomy Detailed Checklist -->
+<article class="bg-white rounded-lg shadow-md p-6">
+<h3 class="text-2xl font-semibold mb-4 flex items-center space-x-3"> <img alt="Icon representing cholecystectomy surgery with stylized gallbladder" class="w-10 h-10" height="40" src="https://storage.googleapis.com/a1aa/image/587bc1f7-89fb-4997-74b9-8ff607cedd75.jpg" width="40"/>
+<span> 
+Cholecystectomy Detailed Checklist 
+</span>
+</h3>
+<ol class="list-decimal list-inside space-y-3 text-gray-700"><li><strong>Materials:</strong><ul class="list-disc list-inside ml-4"><li>Electrocautery device</li><li>Insufflation tubing</li><li>Laparoscopic clip applier</li><li>Laparoscopic instruments set</li><li>Light source and camera cable</li><li>Retrieval bag</li><li>Suction device</li><li>Sutures and staplers</li></ul></li>
+<li>
+<strong> 
+Preoperative Preparation: 
+</strong> 
+Confirm patient identity, consent, and fasting status. Review imaging and labs. </li>
+<li>
+<strong> 
+Patient Positioning: 
+</strong> 
+Supine with slight reverse Trendelenburg and left tilt to expose gallbladder. </li>
+<li>
+<strong> 
+Skin Preparation: 
+</strong> 
+Cleanse upper right abdomen with antiseptic solution. Allow to dry. 
+</li>
+<li>
+<strong> 
+Antibiotic Prophylaxis: 
+</strong> 
+Administer prophylactic antibiotics as per guidelines. 
+</li>
+<li>
+<strong> 
+Incision and Access: 
+</strong> 
+Create pneumoperitoneum using Veress needle or open technique. Insert trocars under direct vision. 
+</li>
+<li>
+<strong> 
+Exposure: 
+</strong> 
+Retract the gallbladder fundus cephalad. Identify Calot’s triangle structures. </li>
+<li>
+<strong> 
+Dissection: 
+</strong> 
+Carefully dissect cystic duct and artery. Achieve critical view of safety. </li>
+<li>
+<strong> 
+Clipping and Division:
+</strong> 
+Apply clips to cystic duct and artery. Transect both structures. 
+</li>
+<li>
+<strong> 
+Gallbladder Removal: 
+</strong> 
+Detach gallbladder from liver bed using electrocautery. Control bleeding. </li>
+<li>
+<strong> 
+Specimen Retrieval: 
+</strong> 
+Place gallbladder in retrieval bag and remove through trocar site. 
+</li>
+<li>
+<strong> 
+Peritoneal Toilet: 
+</strong> 
+Irrigate and aspirate any bile or blood. 
+</li>
+<li>
+<strong> 
+Closure: 
+</strong> 
+Remove trocars under vision. Close fascia for ports &gt;10mm. Close skin with sutures or staples. 
+</li>
+<li>
+<strong> 
+Postoperative Care: 
+</strong> 
+Monitor vitals, pain, and signs of bile leak or infection. Early ambulation encouraged. </li>
+</ol>
+</article>
+<!-- Hernia Repair Detailed Checklist -->
+<article class="bg-white rounded-lg shadow-md p-6">
+<h3 class="text-2xl font-semibold mb-4 flex items-center space-x-3">
+<img alt="Icon representing hernia repair surgery with stylized abdominal wall" class="w-10 h-10" height="40" src="https://storage.googleapis.com/a1aa/image/db4f6d23-377c-4f3f-c12d-dbde6952d957.jpg" width="40"/>
+<span> 
+Hernia Repair Detailed Checklist 
+</span>
+</h3>
+<ol class="list-decimal list-inside space-y-3 text-gray-700"><li><strong>Materials:</strong><ul class="list-disc list-inside ml-4"><li>Laparoscope<li>Electrocautery device</li><li>Needle holder</li><li>Scalpel</li><li>Suction device</li><li>Surgical mesh</li><li>Sutures and staplers</li><li>Tacks or fixation device for mesh</li><li>Tissue forceps</li></ul></li>
+<li>
+<strong> 
+Preoperative Preparation: 
+</strong> 
+Confirm patient identity, consent, and review imaging to classify hernia type. </li>
+<li>
+<strong> 
+Patient Positioning: 
+</strong> 
+Supine position with arms secured. Apply compression devices. </li>
+<li>
+<strong> 
+Skin Preparation: 
+</strong> 
+Cleanse surgical site with antiseptic solution. Allow to dry. 
+</li>
+<li>
+<strong> 
+Antibiotic Prophylaxis: 
+</strong> 
+Administer according to guidelines. 
+</li>
+<li>
+<strong> 
+Incision: 
+</strong> 
+Make an incision appropriate to hernia location (inguinal, femoral, ventral). </li>
+<li>
+<strong> 
+Hernia Sac Identification: 
+</strong> 
+Carefully dissect and isolate the hernia sac. 
+</li>
+<li>
+<strong> 
+Reduction: 
+</strong> 
+Reduce hernia contents back into the abdominal cavity. 
+</li>
+<li>
+<strong> 
+Mesh Placement: 
+</strong> 
+Place synthetic mesh to reinforce the abdominal wall, ensuring adequate overlap. </li>
+<li>
+<strong> 
+Fixation: 
+</strong> 
+Secure mesh with sutures or tacks as per technique. 
+</li>
+<li>
+<strong> 
+Hemostasis: 
+</strong> 
+Ensure bleeding control before closure. 
+</li>
+<li>
+<strong> 
+Closure: 
+</strong> 
+Close muscle and fascia layers with absorbable sutures. Close skin with sutures or staples. 
+</li>
+<li>
+<strong> 
+Postoperative Care: 
+</strong> 
+Monitor wound, pain control, and encourage early mobilization. Educate patient on activity restrictions. 
+</li>
+</ol>
+</article>
+<!-- Cesarean Section Detailed Checklist -->
+<article class="bg-white rounded-lg shadow-md p-6">
+<h3 class="text-2xl font-semibold mb-4 flex items-center space-x-3">
+<img alt="Icon representing cesarean section surgery with stylized uterus and baby" class="w-10 h-10" height="40" src="https://storage.googleapis.com/a1aa/image/e41f2138-36c4-416e-e418-2cc3b94c8eba.jpg" width="40"/>
+<span> 
+Cesarean Section Detailed Checklist 
+</span>
+</h3>
+<ol class="list-decimal list-inside space-y-3 text-gray-700"><li><strong>Materials:</strong><ul class="list-disc list-inside ml-4"><li>Blunt scissors</li><li>Electrocardiogram (ECG) monitor</li><li>IV infusion set</li><li>Neonatal resuscitation kit</li><li>Scalpel</li><li>Sponge forceps</li><li>Suction device</li><li>Surgical drapes</li><li>Sutures and staplers</li><li>Umbilical cord clamp</li></ul></li>
+<li>
+<strong> 
+Preoperative Preparation: 
+</strong> 
+Confirm patient identity, consent, and fetal monitoring. Verify fasting and labs. </li>
+<li>
+<strong>
+Patient Positioning: 
+</strong> 
+Supine with left uterine displacement to avoid aortocaval compression. </li>
+<li>
+<strong> 
+Skin Preparation: 
+</strong> 
+Cleanse lower abdomen with antiseptic solution. Allow to dry. 
+</li>
+<li>
+<strong> 
+Antibiotic Prophylaxis: 
+</strong> 
+Administer recommended antibiotics within 60 minutes before incision. </li>
+<li>
+<strong> 
+Incision: 
+</strong> 
+Make a low transverse (Pfannenstiel) skin incision approximately 2-3 cm above the pubic symphysis. 
+</li>
+<li>
+<strong> 
+Layered Dissection: 
+</strong> 
+Incise subcutaneous tissue, fascia, and separate rectus muscles to expose peritoneum. </li>
+<li>
+<strong> 
+Uterine Incision: 
+</strong> 
+Make a low transverse uterine incision. Control bleeding. 
+</li>
+<li>
+<strong> 
+Delivery: 
+</strong> 
+Deliver the baby carefully, suction airway as needed. Clamp and cut umbilical cord. </li>
+<li>
+<strong> 
+Placenta Delivery: 
+</strong> 
+Deliver placenta manually or spontaneously. Inspect uterine cavity. 
+</li>
+<li>
+<strong> 
+Uterine Closure: 
+</strong> 
+Close uterine incision in two layers with absorbable sutures. 
+</li>
+<li>
+<strong> 
+Hemostasis and Irrigation: 
+</strong> 
+Ensure bleeding control and irrigate abdominal cavity. 
+</li>
+<li>
+<strong> 
+Layered Closure: 
+</strong> 
+Close peritoneum, fascia, subcutaneous tissue, and skin with appropriate sutures or staples. 
+</li>
+<li>
+<strong> 
+Postoperative Care: 
+</strong> 
+Monitor maternal vitals, uterine tone, bleeding, and neonatal status. Provide pain management and thromboprophylaxis. 
+</li>
+</ol>
+</article>
+<!-- Coronary Artery Bypass Detailed Checklist -->
+<article class="bg-white rounded-lg shadow-md p-6">
+<h3 class="text-2xl font-semibold mb-4 flex items-center space-x-3">
+<img alt="Icon representing coronary artery bypass surgery with stylized heart and vessels" class="w-10 h-10" height="40" src="https://storage.googleapis.com/a1aa/image/f5b3e998-1d25-4a14-ab9c-824b9239bb54.jpg" width="40"/>
+<span> 
+Coronary Artery Bypass Detailed Checklist 
+</span>
+</h3>
+<ol class="list-decimal list-inside space-y-3 text-gray-700"><li><strong>Materials:</strong><ul class="list-disc list-inside ml-4"><li>Cardioplegia solution</li><li>Chest tubes</li><li>Electrocardiogram (ECG) monitor</li><li>Heart-lung machine</li><li>Sternal saw</li><li>Sternum wires</li><li>Suction device</li><li>Surgical drapes</li><li>Sutures and staplers</li><li>Vessel dilators</li></ul></li>
+<li>
+<strong> 
+Preoperative Preparation: 
+</strong> 
+Confirm patient identity, consent, and cardiac status. Review imaging and labs. </li>
+<li>
+<strong> 
+Patient Positioning:
+</strong> 
+Supine with arms extended for IV access and monitoring. 
+</li>
+<li>
+<strong> 
+Skin Preparation: 
+</strong> 
+Cleanse chest, abdomen, and leg donor sites with antiseptic solution. Allow to dry. </li>
+<li>
+<strong> 
+Antibiotic Prophylaxis: 
+</strong> 
+Administer antibiotics per protocol. 
+</li>
+<li>
+<strong> 
+Incision: 
+</strong> 
+Perform median sternotomy to access the heart. 
+</li>
+<li>
+<strong> 
+Harvesting Grafts: 
+</strong> 
+Harvest saphenous vein or internal mammary artery as grafts. 
+</li>
+<li>
+<strong> 
+Cardiopulmonary Bypass: 
+</strong> 
+Connect patient to heart-lung machine for extracorporeal circulation. </li>
+<li>
+<strong> 
+Coronary Artery Exposure: 
+</strong> 
+Identify and prepare coronary arteries for grafting. 
+</li>
+<li>
+<strong> 
+Graft Anastomosis: 
+</strong> 
+Attach graft vessels to coronary arteries and aorta ensuring patency. </li>
+<li>
+<strong> 
+Weaning from Bypass:
+</strong> 
+Gradually restore heart function and remove heart-lung machine support. </li>
+<li>
+<strong> 
+Hemostasis and Closure: 
+</strong> 
+Control bleeding, place chest tubes, and close sternum with wires. Close soft tissues and skin. 
+</li>
+<li>
+<strong> 
+Postoperative Care: 
+</strong> 
+Transfer to ICU for cardiac monitoring, ventilation support, and anticoagulation management. 
+</li>
+</ol>
+</article>
+<!-- Knee Arthroscopy Detailed Checklist -->
+<article class="bg-white rounded-lg shadow-md p-6">
+<h3 class="text-2xl font-semibold mb-4 flex items-center space-x-3"> <img alt="Icon representing knee arthroscopy surgery with stylized knee joint" class="w-10 h-10" height="40" src="https://storage.googleapis.com/a1aa/image/19a3395f-bbae-4798-687a-840114f08c20.jpg" width="40"/>
+<span> 
+Knee Arthroscopy Detailed Checklist 
+</span>
+</h3>
+<ol class="list-decimal list-inside space-y-3 text-gray-700"><li><strong>Materials:</strong><ul class="list-disc list-inside ml-4"><li>Arthroscope and camera system</li><li>Cannulas</li><li>Irrigation fluid</li><li>Meniscus repair kit</li><li>Shaver system</li><li>Suction device</li><li>Sutures and staplers</li></ul></li>
+<li>
+<strong> 
+Preoperative Preparation: 
+</strong> 
+Confirm patient identity, consent, and review imaging. 
+</li>
+<li>
+<strong> 
+Patient Positioning: 
+</strong> 
+Supine with leg secured in a leg holder. Apply tourniquet if indicated. 
+</li>
+<li>
+<strong> 
+Skin Preparation: 
+</strong> 
+Cleanse knee and surrounding area with antiseptic solution. Allow to dry.
+</li>
+<li>
+<strong> 
+Antibiotic Prophylaxis: 
+</strong> 
+Administer antibiotics as per protocol. 
+</li>
+<li>
+<strong> 
+Incision and Portals: 
+</strong> 
+Make small incisions for arthroscope and instruments (anterolateral and anteromedial portals). 
+</li>
+<li>
+<strong> 
+Arthroscope Insertion: 
+</strong> 
+Insert arthroscope and establish fluid inflow for joint distension. 
+</li>
+<li>
+<strong> 
+Diagnostic Evaluation: 
+</strong> 
+Systematically inspect all compartments of the knee joint. 
+</li>
+<li>
+<strong> 
+Therapeutic Procedures: 
+</strong> 
+Perform indicated procedures such as meniscectomy, ligament repair, or synovectomy. </li>
+<li>
+<strong> 
+Hemostasis and Irrigation: 
+</strong> 
+Control bleeding and irrigate joint thoroughly. 
+</li>
+<li>
+<strong> 
+Closure: 
+</strong> 
+Remove instruments, close portals with sutures or steri-strips, and apply sterile dressing. 
+</li>
+<li>
+<strong> 
+Postoperative Care:
+</strong> 
+Monitor pain, swelling, and neurovascular status. Initiate early mobilization and physical therapy. 
+</li>
+</ol>
+</article>
+<!-- Thyroidectomy Detailed Checklist -->
+<article class="bg-white rounded-lg shadow-md p-6">
+<h3 class="text-2xl font-semibold mb-4 flex items-center space-x-3">
+<img alt="Icon representing thyroidectomy surgery with stylized thyroid gland" class="w-10 h-10" height="40" src="https://storage.googleapis.com/a1aa/image/30b50231-8d22-4ea2-b325-33a2ecc0c491.jpg" width="40"/>
+<span> 
+Thyroidectomy Detailed Checklist 
+</span>
+</h3>
+<ol class="list-decimal list-inside space-y-3 text-gray-700"><li><strong>Materials:</strong><ul class="list-disc list-inside ml-4"><li>Hemostatic agents</li><li>Nerve monitoring device</li><li>Scalpel</li><li>Small retractors</li><li>Suction device</li><li>Sutures and staplers</li></ul></li>
+<li>
+<strong> 
+Preoperative Preparation: 
+</strong> 
+Confirm patient identity, consent, and review thyroid function tests and imaging. </li>
+<li>
+<strong> 
+Patient Positioning: 
+</strong> 
+Supine with neck extended using a shoulder roll. 
+</li>
+<li>
+<strong> 
+Skin Preparation: 
+</strong> 
+Cleanse anterior neck with antiseptic solution. Allow to dry. 
+</li>
+<li>
+<strong> 
+Antibiotic Prophylaxis: 
+</strong> 
+Administer antibiotics as per protocol. 
+</li>
+<li>
+<strong> 
+Incision: 
+</strong> 
+Make a transverse cervical incision two fingerbreadths above the sternal notch. </li>
+<li>
+<strong> 
+Dissection: 
+</strong> 
+Divide platysma and separate strap muscles to expose thyroid gland. 
+</li>
+<li>
+<strong> 
+Identification of Structures: 
+</strong> 
+Identify and preserve recurrent laryngeal nerves and parathyroid glands. </li>
+<li>
+<strong> 
+Gland Removal: 
+</strong> 
+Ligate superior and inferior thyroid vessels. Remove thyroid lobe or total gland as indicated. 
+</li>
+<li>
+<strong> 
+Hemostasis: 
+</strong> 
+Ensure meticulous bleeding control. 
+</li>
+<li>
+<strong> 
+Closure: 
+</strong> 
+Reapproximate strap muscles and platysma. Close skin with sutures or staples. </li>
+<li>
+<strong> 
+Postoperative Care: 
+</strong> 
+Monitor airway patency, calcium levels, and voice changes. Provide pain management. </li>
+</ol>
+</article>
+<!-- Mastectomy Detailed Checklist -->
+<article class="bg-white rounded-lg shadow-md p-6">
+<h3 class="text-2xl font-semibold mb-4 flex items-center space-x-3">
+<img alt="Icon representing mastectomy surgery with stylized breast" class="w-10 h-10" height="40" src="https://storage.googleapis.com/a1aa/image/b7a2b3a2-8de3-4364-65c1-a654afd06e80.jpg" width="40"/>
+<span> 
+Mastectomy Detailed Checklist
+</span>
+</h3>
+<ol class="list-decimal list-inside space-y-3 text-gray-700"><li><strong>Materials:</strong><ul class="list-disc list-inside ml-4"><li>Electrocautery pads</li><li>Gauze and dressings</li><li>Hemovac drain</li><li>Scalpel</li><li>Suction device</li><li>Sutures and staplers</li></ul></li> <li>
+<strong> 
+Preoperative Preparation: 
+</strong> 
+Confirm patient identity, consent, and review imaging and labs. </li>
+<li>
+<strong> 
+Patient Positioning: 
+</strong> 
+Supine with arm abducted on operative side. 
+</li>
+<li>
+<strong> 
+Skin Preparation: 
+</strong> 
+Cleanse chest wall and axilla with antiseptic solution. Allow to dry. </li>
+<li>
+<strong> 
+Antibiotic Prophylaxis: 
+</strong> 
+Administer antibiotics as per guidelines. 
+</li>
+<li>
+<strong> 
+Incision: 
+</strong> 
+Mark and make elliptical incision encompassing breast tissue. </li>
+<li>
+<strong> 
+Dissection: 
+</strong> 
+Remove breast tissue including nipple-areola complex if indicated. </li>
+<li>
+<strong> 
+Axillary Dissection: 
+</strong> 
+Perform sentinel lymph node biopsy or axillary clearance as indicated. </li>
+<li>
+<strong> 
+Hemostasis:
+</strong> 
+Control bleeding meticulously. 
+</li>
+<li>
+<strong> 
+Drain Placement: 
+</strong> 
+Place suction drains in surgical site. 
+</li>
+<li>
+<strong> 
+Closure: 
+</strong> 
+Close skin with sutures or staples. 
+</li>
+<li>
+<strong> 
+Postoperative Care: 
+</strong> 
+Monitor drains, pain, and wound healing. Provide arm physiotherapy instructions. </li>
+</ol>
+</article>
+<!-- Hip Replacement Detailed Checklist -->
+<article class="bg-white rounded-lg shadow-md p-6">
+<h3 class="text-2xl font-semibold mb-4 flex items-center space-x-3"> <img alt="Icon representing hip replacement surgery with stylized hip joint" class="w-10 h-10" height="40" src="https://storage.googleapis.com/a1aa/image/3ba42c7f-9457-4a04-921f-9820cc65a692.jpg" width="40"/>
+<span> 
+Hip Replacement Detailed Checklist 
+</span>
+</h3>
+<ol class="list-decimal list-inside space-y-3 text-gray-700"><li><strong>Materials:</strong><ul class="list-disc list-inside ml-4"><li>Bone cement (if needed)</li><li>Bone saw</li><li>Implant system (femoral and acetabular components)</li><li>Reamers and rasps</li><li>Suction device</li><li>Sutures and staplers</li></ul></li>
+<li>
+<strong> 
+Preoperative Preparation: 
+</strong> 
+Confirm patient identity, consent, and review imaging and labs. 
+</li>
+<li>
+<strong> 
+Patient Positioning: 
+</strong> 
+Lateral decubitus or supine depending on surgical approach. 
+</li>
+<li>
+<strong> 
+Skin Preparation: 
+</strong> 
+Cleanse hip and thigh with antiseptic solution. Allow to dry. </li>
+<li>
+<strong> 
+Antibiotic Prophylaxis: 
+</strong> 
+Administer antibiotics as per protocol. 
+</li>
+<li>
+<strong> 
+Incision: 
+</strong> 
+Make incision according to chosen approach (posterior, lateral, or anterior). </li>
+<li>
+<strong> 
+Dissection: 
+</strong> 
+Expose hip joint by dissecting muscles and capsule. 
+</li>
+<li>
+<strong> 
+Femoral Head Removal: 
+</strong> 
+Dislocate and remove femoral head. 
+</li>
+<li>
+<strong> 
+Implant Placement: 
+</strong> 
+Prepare acetabulum and femur. Insert prosthetic components. </li>
+<li>
+<strong> 
+Stability Check: 
+</strong> 
+Assess joint stability and range of motion. 
+</li>
+<li>
+<strong> 
+Closure: 
+</strong> 
+Close capsule, muscles, subcutaneous tissue, and skin. 
+</li>
+<li>
+<strong> 
+Postoperative Care: 
+</strong> 
+Monitor vitals, pain, and neurovascular status. Initiate physiotherapy. 
+</li>
+</ol>
+</article>
+<!-- Cataract Surgery Detailed Checklist -->
+<article class="bg-white rounded-lg shadow-md p-6">
+<h3 class="text-2xl font-semibold mb-4 flex items-center space-x-3"> <img alt="Icon representing cataract surgery with stylized eye" class="w-10 h-10" height="40" src="https://storage.googleapis.com/a1aa/image/f81b42c1-eee0-4cc6-20f0-c23d7a9eb96e.jpg" width="40"/>
+<span> 
+Cataract Surgery Detailed Checklist 
+</span>
+</h3>
+<ol class="list-decimal list-inside space-y-3 text-gray-700"><li><strong>Materials:</strong><ul class="list-disc list-inside ml-4"><li>Eye speculum</li><li>Microscope</li><li>Microsurgical instruments set</li><li>Sterile drape with eye aperture</li><li>Suction device</li><li>Sutures and staplers</li><li>Viscoelastic device</li></ul></li>
+<li>
+<strong> 
+Preoperative Preparation: 
+</strong> 
+Confirm patient identity, consent, and perform ocular measurements. 
+</li>
+<li>
+<strong> 
+Patient Positioning: 
+</strong> 
+Supine with head stabilized. 
+</li>
+<li>
+<strong> 
+Skin and Eye Preparation: 
+</strong> 
+Cleanse periocular area with antiseptic solution. Instill topical antibiotics. </li>
+<li>
+<strong> 
+Anesthesia: 
+</strong> 
+Administer local or topical anesthesia. 
+</li>
+<li>
+<strong> 
+Incision: 
+</strong> 
+Create small corneal or scleral incision.
+</li>
+<li>
+<strong> 
+Capsulorhexis: 
+</strong> 
+Create circular opening in anterior lens capsule. 
+</li>
+<li>
+<strong> 
+Phacoemulsification: 
+</strong> 
+Fragment and aspirate the cloudy lens. 
+</li>
+<li>
+<strong> 
+Intraocular Lens Implantation: 
+</strong> 
+Insert artificial lens into capsular bag. 
+</li>
+<li>
+<strong> 
+Wound Closure: 
+</strong> 
+Hydrate incision or place suture if needed. 
+</li>
+<li>
+<strong> 
+Postoperative Care: 
+</strong> 
+Monitor intraocular pressure, inflammation, and visual acuity. Prescribe eye drops. </li>
+</ol>
+</article>
+<!-- Colectomy Detailed Checklist -->
+<article class="bg-white rounded-lg shadow-md p-6">
+<h3 class="text-2xl font-semibold mb-4 flex items-center space-x-3">
+<img alt="Icon representing colectomy surgery with stylized large intestine" class="w-10 h-10" height="40" src="https://storage.googleapis.com/a1aa/image/6d24a8d2-95d7-40c9-8a30-d5b1e898176b.jpg" width="40"/>
+<span> 
+Colectomy Detailed Checklist 
+</span>
+</h3>
+<ol class="list-decimal list-inside space-y-3 text-gray-700"><li><strong>Materials:</strong><ul class="list-disc list-inside ml-4"><li>Anastomosis stapler or sutures</li><li>Bowel clamps</li><li>Hemostatic agents</li><li>Scalpel</li><li>Suction device</li><li>Surgical drapes</li><li>Sutures and staplers</li></ul></li>
+<li>
+<strong> 
+Preoperative Preparation:
+</strong> 
+Confirm patient identity, consent, and review imaging and labs. </li>
+<li>
+<strong> 
+Patient Positioning: 
+</strong> 
+Supine with arms secured. 
+</li>
+<li>
+<strong> 
+Skin Preparation: 
+</strong> 
+Cleanse abdomen with antiseptic solution. Allow to dry. </li>
+<li>
+<strong> 
+Antibiotic Prophylaxis: 
+</strong> 
+Administer antibiotics as per protocol. 
+</li>
+<li>
+<strong> 
+Incision: 
+</strong> 
+Make midline or transverse abdominal incision depending on extent. </li>
+<li>
+<strong> 
+Mobilization: 
+</strong> 
+Mobilize colon and ligate blood vessels. 
+</li>
+<li>
+<strong> 
+Resection: 
+</strong> 
+Resect diseased colon segment. 
+</li>
+<li>
+<strong> 
+Anastomosis: 
+</strong> 
+Perform bowel anastomosis or create stoma as indicated. </li>
+<li>
+<strong> 
+Hemostasis:
+</strong> 
+Ensure bleeding control. 
+</li>
+<li>
+<strong> 
+Closure: 
+</strong> 
+Close abdominal wall layers and skin. 
+</li>
+<li>
+<strong> 
+Postoperative Care: 
+</strong> 
+Monitor bowel function, pain, and wound healing. 
+</li>
+</ol>
+</article>
+<!-- Craniotomy Detailed Checklist -->
+<article class="bg-white rounded-lg shadow-md p-6">
+<h3 class="text-2xl font-semibold mb-4 flex items-center space-x-3"> <img alt="Icon representing craniotomy surgery with stylized skull and brain" class="w-10 h-10" height="40" src="https://storage.googleapis.com/a1aa/image/599f58a3-a9df-4813-bc92-873560e712bc.jpg" width="40"/>
+<span> 
+Craniotomy Detailed Checklist 
+</span>
+</h3>
+<ol class="list-decimal list-inside space-y-3 text-gray-700"><li><strong>Materials:</strong><ul class="list-disc list-inside ml-4"><li>Bone flap fixation plates</li><li>Craniotome (drill)</li><li>Hemostatic agents</li><li>Microsurgical instruments</li><li>Sterile drapes and neuro headrest</li><li>Suction device</li><li>Sutures and staplers</li></ul></li>
+<li>
+<strong> 
+Preoperative Preparation: 
+</strong> 
+Confirm patient identity, consent, and review neuroimaging and labs. 
+</li>
+<li>
+<strong> 
+Patient Positioning: 
+</strong> 
+Position according to lesion location (supine, lateral, or prone). 
+</li>
+<li>
+<strong> 
+Skin Preparation: 
+</strong> 
+Cleanse scalp and neck with antiseptic solution. Allow to dry. 
+</li>
+<li>
+<strong> 
+Antibiotic Prophylaxis: 
+</strong> 
+Administer antibiotics as per protocol. 
+</li>
+<li>
+<strong> 
+Incision: 
+</strong> 
+Mark and make scalp incision appropriate to craniotomy site. </li>
+<li>
+<strong> 
+Scalp Flap Elevation: 
+</strong> 
+Elevate scalp flap and expose skull. 
+</li>
+<li>
+<strong> 
+Craniotomy: 
+</strong> 
+Drill burr holes and remove bone flap. 
+</li>
+<li>
+<strong> 
+Dural Opening: 
+</strong> 
+Incise dura mater to expose brain. 
+</li>
+<li>
+<strong> 
+Surgical Procedure: 
+</strong> 
+Perform indicated neurosurgical intervention. 
+</li>
+<li>
+<strong> 
+Closure: 
+</strong> 
+Close dura, replace bone flap, and close scalp layers. </li>
+<li>
+<strong> 
+Postoperative Care: 
+</strong> 
+Monitor neurological status, ICP, and wound healing. </li>
+</ol>
+</article>
+</div>
+</section>
+
+</main>
+<footer class="bg-white border-t border-gray-200 py-6 text-center text-gray-600 text-sm"> © 2025 Aider. All rights reserved. 
+</footer>
+<script> 
+const menuBtn = document.getElementById("menu-btn"); 
+const mobileMenu = document.getElementById("mobile-menu"); 
+menuBtn.addEventListener("click", () => { 
+mobileMenu.classList.toggle("hidden"); 
+}); 
+</script>
+</body>
+</html>
